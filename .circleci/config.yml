@@ -1,0 +1,59 @@
+version: 2.1
+orbs:
+  cypress: cypress-io/cypress@1.29.0
+  win: circleci/windows@2.4.1
+  macos: circleci/macos@1.2.0
+executors:
+  with-chrome:
+    docker:
+      - image: 'cypress/browsers:node14.16.0-chrome90-ff88'
+  with-firefox:
+    docker:
+      - image: 'cypress/browsers:node14.16.0-chrome89-ff86'
+  with-edge:
+    docker:
+      - image: 'cypress/browsers:node14.10.1-edge88'
+      
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Workflows ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ #
+linux/windows-workflow: &linux/windows-workflow
+    jobs:
+        - cypress/run:
+            name: Chrome
+            verify-command: yarn cypress verify
+            store_artifacts: true
+            executor: with-chrome
+            browser: chrome
+            group: chrome
+            record: false
+        - cypress/run:
+            name: Firefox
+            verify-command: yarn cypress verify
+            store_artifacts: true
+            executor: with-firefox
+            browser: firefox
+            group: firefox
+            record: false
+        - cypress/run:
+            name: Edge
+            verify-command: yarn cypress verify
+            store_artifacts: true
+            executor: with-edge
+            browser: edge
+            group: edge
+            record: false
+# windows-workflow         
+        - cypress/run:
+            name: "Electron - Windows"
+            executor: 
+            # executor comes from the "windows" orb
+            name: win/default
+            shell: bash.exe
+            verify-command: yarn cypress verify
+            store_artifacts: true
+            browser: electron
+            group: Electron - Windows
+            record: false
+
+workflows:
+    build:
+    <<: *linux/windows-workflow

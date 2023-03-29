@@ -1,0 +1,9 @@
+{
+    "one-time":{
+        "five-dollar": {
+            "env": {
+                "url": "https://stripe-samples.github.io/github-pages-stripe-checkout/"
+            }
+        }
+    }
+}

@@ -1,0 +1,221 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-03-29T13:51:46.706Z",
+    "end": "2023-03-29T13:52:53.898Z",
+    "duration": 67192,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fe1b6d96-2d3c-44a4-a72e-1b28e1d4642a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\one-time-donation.ts",
+      "file": "cypress\\e2e\\one-time-donation.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b54808d-740b-43de-9508-e94e5406c880",
+          "title": "Submit One-Time Donation with $5.00",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Without 3D secure Verification",
+              "fullTitle": "Submit One-Time Donation with $5.00 Without 3D secure Verification",
+              "timedOut": null,
+              "duration": 14986,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('Without 3D secure Verfication');",
+              "err": {},
+              "uuid": "b6ad03d3-045b-49f8-ac60-0f0d9bc74e98",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "With 3D secure Verification",
+              "fullTitle": "Submit One-Time Donation with $5.00 With 3D secure Verification",
+              "timedOut": null,
+              "duration": 9630,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('With 3D secure Verification');",
+              "err": {},
+              "uuid": "7116e0c0-e8be-4af1-9724-ca9425ceedf2",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate Mandatory Fields",
+              "fullTitle": "Submit One-Time Donation with $5.00 Validate Mandatory Fields",
+              "timedOut": null,
+              "duration": 5697,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('Mandatory fields');",
+              "err": {},
+              "uuid": "b9d8c11c-5887-4ab1-b3f3-a350c27f60b8",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Failed submission with 3D secure Verification",
+              "fullTitle": "Submit One-Time Donation with $5.00 Failed submission with 3D secure Verification",
+              "timedOut": null,
+              "duration": 9053,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('Failed submission with 3D secure Verification');",
+              "err": {},
+              "uuid": "0f07e6f6-656f-4596-9ce4-8a6a31dd8330",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Complete submission with 3D secure Verification",
+              "fullTitle": "Submit One-Time Donation with $5.00 Complete submission with 3D secure Verification",
+              "timedOut": null,
+              "duration": 8755,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('Complete submission with 3D secure Verification');",
+              "err": {},
+              "uuid": "6ed4953d-f223-45fa-860a-22033cdc5452",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Save information for 1-click Checkout",
+              "fullTitle": "Submit One-Time Donation with $5.00 Save information for 1-click Checkout",
+              "timedOut": null,
+              "duration": 10989,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('Save information for 1-click Checkout');",
+              "err": {},
+              "uuid": "8a98a7f0-a28f-4036-9a6c-0e71135bc088",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Validate incomplete email address",
+              "fullTitle": "Submit One-Time Donation with $5.00 Validate incomplete email address",
+              "timedOut": null,
+              "duration": 5118,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "COMM_ELEMENTS.scenarios('Validate incomplete email address');",
+              "err": {},
+              "uuid": "197b3c5a-5db8-4ba6-b8b2-983eaf995f6a",
+              "parentUUID": "8b54808d-740b-43de-9508-e94e5406c880",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b6ad03d3-045b-49f8-ac60-0f0d9bc74e98",
+            "7116e0c0-e8be-4af1-9724-ca9425ceedf2",
+            "b9d8c11c-5887-4ab1-b3f3-a350c27f60b8",
+            "0f07e6f6-656f-4596-9ce4-8a6a31dd8330",
+            "6ed4953d-f223-45fa-860a-22033cdc5452",
+            "8a98a7f0-a28f-4036-9a6c-0e71135bc088",
+            "197b3c5a-5db8-4ba6-b8b2-983eaf995f6a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 64228,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
