@@ -37,8 +37,8 @@ https://stripe-samples.github.io/github-pages-stripe-checkout/
 
 ![image](https://user-images.githubusercontent.com/13224286/228564371-4a4074ea-ef89-48c9-b414-08bdf911729e.png)
 - HTML Report (you can view the html report under reports>mochareports>report.html)
-
 ![image](https://user-images.githubusercontent.com/13224286/228563713-2c47be3b-ee45-45bd-92b8-a70b9df11bea.png)
+- Github Page https://alexanderalipoyo.github.io/cypress-mochawesome-reporter/
 - Please play the sample video during execution with headless and view mode
 
 ![image](https://user-images.githubusercontent.com/13224286/228563909-f0525cc3-0a3f-41aa-b9d8-69efb37a4325.png)
